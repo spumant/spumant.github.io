@@ -1,2 +1,1 @@
-- [:octocat: 首页](/README)
-- :memo: 目录
+- [**欢迎回家**](/README.md)
