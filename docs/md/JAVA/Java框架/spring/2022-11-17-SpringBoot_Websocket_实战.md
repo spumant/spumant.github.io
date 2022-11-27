@@ -1,34 +1,4 @@
----
-layout: post
-cid: 303
-title: SpringBoot Websocket 实战
-slug: 303
-date: 2022/11/17 15:23:00
-updated: 2022/11/22 11:07:08
-status: publish
-author: 翕
-categories: 
-  - Java框架
-tags: 
-abcimg: able
-bimg: http://rldshljp3.hn-bkt.clouddn.com/ws3.png
-customSummary: 
-img: http://rldshljp3.hn-bkt.clouddn.com/ws3.png
-mathjax: auto
-noThumbInfoEmoji: 
-noThumbInfoStyle: default
-outdatedNotice: no
-parseWay: auto
-reprint: standard
-thumb: https://cdn.acwing.com/media/article/image/2022/11/22/192601_f83994d86a-ws3.png
-thumbChoice: default
-thumbDesc: 
-thumbSmall: 
-thumbStyle: default
----
-
-
-##什么是Websocket
+## 什么是Websocket
 >Websocket 是一种在单个TCP连接上进行全双工通信的协议。WebSocket连接成功后，服务端与客户端可以双向通信。在需要消息推送的场景，Websocket 相对于轮询能更好的节省服务器资源和带宽，并且能够更实时地进行通讯。
 ![](https://cdn.acwing.com/media/article/image/2022/11/22/192601_e93906406a-kob88.png)
 
@@ -39,7 +9,7 @@ thumbStyle: default
  - 可以发送文本，也可以发送二进制数据。
  - 没有同源限制，客户端可以与任意服务器通信。
  - 协议标识符是ws（如果加密，则为wss），服务器网址就是 URL。
-###SpringBoot 中使用 Websocket
+### SpringBoot 中使用 Websocket
 在简单了解Websocket 之后，我们来动手实践一下。SpringBoot 中有多种方式可以实现Websocket Server，这里我选择使用Tomcat 中 javax.websocket.server 的api来实现
 引入Maven依赖
 ```
@@ -109,7 +79,7 @@ public class WebsocketConfig {
 
 服务端 向客户端推送消息 通过 session.getBasicRemote().sendText(message); 即可
 
-###建立一个SessionManager
+### 建立一个SessionManager
 当我们想向客户端推送消息的时候，首先我们需要找到客户端与服务端建立的连接，也就是WebscoketSession
 
 WsServerContainer 中虽然已经存储了 WebscoketSession，但是并没有办法直接通过SessionId，或者我们的业务Id 直接定位到指定的Session，所以我们需要实现一个自己的SessionManager
@@ -117,7 +87,7 @@ WsServerContainer 中虽然已经存储了 WebscoketSession，但是并没有办
 final ConcurrentHashMap<Object, Session> sessionPool = new ConcurrentHashMap<>();
 ```
 使用 ConcurrentHashMap 管理即可
-###分布式推送解决
+### 分布式推送解决
 ![](https://cdn.acwing.com/media/article/image/2022/11/22/192601_eec677286a-ws1.png)
 如图，用户1与服务器A建立Webscoket，用户2与服务器B建立Webscoket，那么用户1如果想向用户2推送一条消息，该如何实现？
 

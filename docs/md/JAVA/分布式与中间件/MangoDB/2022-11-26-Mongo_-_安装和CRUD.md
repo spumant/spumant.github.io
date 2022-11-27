@@ -1,30 +1,3 @@
----
-layout: post
-cid: 434
-title: Mongo - 安装和CRUD
-slug: 434
-date: 2022/11/26 12:37:06
-updated: 2022/11/26 12:37:06
-status: publish
-author: 翕
-categories: 
-  - MangoDB
-tags: 
-customSummary: 
-mathjax: auto
-noThumbInfoEmoji: 
-noThumbInfoStyle: default
-outdatedNotice: no
-parseWay: auto
-reprint: standard
-thumb: 
-thumbChoice: default
-thumbDesc: 
-thumbSmall: 
-thumbStyle: default
----
-
-
 ## MongoDB安装
 
 ### 参考文档

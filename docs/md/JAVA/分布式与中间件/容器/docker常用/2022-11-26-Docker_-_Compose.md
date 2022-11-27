@@ -1,30 +1,3 @@
----
-layout: post
-cid: 408
-title: Docker - Compose
-slug: 408
-date: 2022/11/26 12:12:03
-updated: 2022/11/26 12:12:03
-status: publish
-author: 翕
-categories: 
-  - 容器
-tags: 
-customSummary: 
-mathjax: auto
-noThumbInfoEmoji: 
-noThumbInfoStyle: default
-outdatedNotice: no
-parseWay: auto
-reprint: standard
-thumb: 
-thumbChoice: default
-thumbDesc: 
-thumbSmall: 
-thumbStyle: default
----
-
-
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 

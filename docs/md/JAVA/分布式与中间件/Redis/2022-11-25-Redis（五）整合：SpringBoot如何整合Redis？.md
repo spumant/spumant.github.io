@@ -1,30 +1,3 @@
----
-layout: post
-cid: 374
-title: Redis（五）整合：SpringBoot如何整合Redis？
-slug: 374
-date: 2022/11/25 20:50:00
-updated: 2022/11/26 00:22:07
-status: publish
-author: 翕
-categories: 
-  - Redis
-tags: 
-customSummary: 
-mathjax: auto
-noThumbInfoEmoji: 
-noThumbInfoStyle: default
-outdatedNotice: no
-parseWay: auto
-reprint: standard
-thumb: 
-thumbChoice: default
-thumbDesc: 
-thumbSmall: 
-thumbStyle: default
----
-
-
 ## 前言
 
 SpringBoot应该不用过多介绍了吧！是Spring当前最火的一个框架，既然学习了Redis，我们肯定是要在实际项目中使用，那么肯定首选整合SpringBoot啦！

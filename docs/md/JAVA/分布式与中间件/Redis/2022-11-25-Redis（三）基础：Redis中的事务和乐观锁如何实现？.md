@@ -1,30 +1,3 @@
----
-layout: post
-cid: 372
-title: Redis（三）基础：Redis中的事务和乐观锁如何实现？
-slug: 372
-date: 2022/11/25 20:25:00
-updated: 2022/11/25 20:25:41
-status: publish
-author: 翕
-categories: 
-  - Redis
-tags: 
-customSummary: 
-mathjax: auto
-noThumbInfoEmoji: 
-noThumbInfoStyle: default
-outdatedNotice: no
-parseWay: auto
-reprint: standard
-thumb: 
-thumbChoice: default
-thumbDesc: 
-thumbSmall: 
-thumbStyle: default
----
-
-
 ## Redis（三）基础：Redis中的事务和乐观锁如何实现？
 
 ## 前言

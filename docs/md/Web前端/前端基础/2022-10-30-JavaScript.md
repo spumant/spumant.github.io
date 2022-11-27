@@ -1,22 +1,4 @@
----
-layout: post
-cid: 25
-title: JavaScript
-slug: 25
-date: 2022/10/30 08:33:00
-updated: 2022/10/30 18:30:03
-status: publish
-author: 翕
-categories: 
-  - Web前端
-tags: 
-abcimg: able
-bimg: https://cdn.acwing.com/media/article/image/2022/10/30/192601_cb264ed858-vue.jfif
-img: https://cdn.acwing.com/media/article/image/2022/10/30/192601_cb264ed858-vue.jfif
----
-
-
- #JS的调用方式与执行顺序#
+# JS的调用方式与执行顺序
 使用方式
 HTML页面中的任意位置加上<script type="module"></script>标签即可。
 
@@ -60,7 +42,7 @@ HTML, CSS, JavaScript三者之间的关系
  - CSS控制HTML
  - JavaScript控制HTML与CSS
  - 为了方便开发与维护，尽量按照上述顺序写代码。例如：不要在HTML中调用JavaScript中的函数。
-#变量与运算符#
+# 变量与运算符
 let与const
 用来声明变量，作用范围为当前作用域。
  - let用来定义变量；
@@ -92,7 +74,7 @@ const n = 100;
 
  - **表示乘方
  - 等于与不等于用===和!==
-#输入与输出#
+# 输入与输出
 输入
  - 从HTML与用户的交互中输入信息，例如通过input、textarea等标签获取用户的键盘输入，通过click、hover等事件获取用户的鼠标输入。
  - 通过Ajax与WebSocket从服务器端获取输入
@@ -124,7 +106,7 @@ let s =
 let x = 1.234567;
 let s = `${x.toFixed(2)}`;
 ```
-#判断语句#
+# 判断语句
 JavaScript中的if-else语句与C++、Python、Java中类似。
 
 例如：
@@ -145,7 +127,7 @@ JavaScript中的逻辑运算符也与C++、Java中类似：
  - &&表示与
  - ||表示或
  - !表示非
-#循环语句#
+# 循环语句
 JavaScript中的循环语句与C++中类似，也包含for、while、do while循环。
 
 for循环
@@ -196,7 +178,7 @@ let person = {
  - person.name、person.add_money()
  - person["name"]、person["add_money"]()
 
-#数组#
+# 数组
 数组是一种特殊的对象。
 类似于C++中的数组，但是数组中的元素类型可以不同。
 
@@ -231,7 +213,7 @@ console.log(a[0]);
  - 函数splice(a, b)：删除从a开始的b个元素
  - 函数sort()：将整个数组从小到大排序
      - 自定义比较函数：array.sort(cmp)，函数cmp输入两个需要比较的元素，返回一个实数，负数表示第一个参数小于第二个参数，0表示相等，正数表示大于。
-#函数#
+# 函数
 函数是用对象来实现的。
 函数也C++中的函数类似。
 
@@ -252,7 +234,7 @@ let add = (a, b) => {
 返回值
 如果未定义返回值，则返回undefined。
 
-#类#
+# 类
 与C++中的Class类似。但是不存在私有成员。
 
  - this指向类的实例。
@@ -345,7 +327,7 @@ let q = new Point(3, 4);
 
 console.log(Point.cnt);
 ```
-#事件#
+# 事件
 JavaScript的代码一般通过事件触发。
 
 可以通过addEventListener函数为元素绑定事件的触发函数。
@@ -387,8 +369,8 @@ keydown、keyup、keypress的关系类似于鼠标的mousedown、mouseup、click
  - scroll：滚动指定的元素
  - load：当元素被加载完成
 
-#常用库#
-##jQuery##
+# 常用库
+## jQuery
 使用方式
 在<head>元素中添加：
 ```
@@ -510,7 +492,7 @@ $.ajax({
     },
 });
 ```
- ##setTimeout与setInterval##
+ ## setTimeout与setInterval
 setTimeout(func, delay)
 delay毫秒后，执行函数func()。
 
@@ -536,7 +518,7 @@ let interval_id = setInterval(() => {
 
 clearInterval(interval_id);  // 清除周期执行的函数
 ```
-##requestAnimationFrame##
+## requestAnimationFrame
 requestAnimationFrame(func)
 该函数会在下次浏览器刷新页面之前执行一次，通常会用递归写法使其每秒执行60次func函数。调用时会传入一个参数，表示函数执行的时间戳，单位为毫秒。
 
@@ -554,7 +536,7 @@ requestAnimationFrame(step);
  - requestAnimationFrame渲染动画的效果更好，性能更加。
    该函数可以保证每两次调用之间的时间间隔相同，但setTimeout与setInterval不能保证这点。setTmeout两次调用之间的间隔包含回调函数的执行时间；setInterval只能保证按固定时间间隔将回调函数压入栈中，但具体的执行时间间隔仍然受回调函数的执行时间影响。
  - 当页面在后台时，因为页面不再渲染，因此requestAnimationFrame不再执行。但setTimeout与setInterval函数会继续执行。
-##Map与Set##
+## Map与Set
 Map
 Map 对象保存键值对。
  - 用for...of或者forEach可以按插入顺序遍历。
@@ -581,7 +563,7 @@ Set 对象允许你存储任何类型的唯一值，无论是原始值或者是�
  - size：返回元素数量
  - delete()：删除某个元素
  - clear()：删除所有元素
-##localStorage##
+## localStorage
 可以在用户的浏览器上存储键值对。
 
 常用API：
@@ -590,14 +572,14 @@ Set 对象允许你存储任何类型的唯一值，无论是原始值或者是�
  - getItem(key)：查找
  - removeItem(key)：删除
  - clear()：清空
-##JSON##
+## JSON
 JSON对象用于序列化对象、数组、数值、字符串、布尔值和null。
 
 常用API：
 
  - JSON.parse()：将字符串解析成对象
  - JSON.stringify()：将对象转化为字符串
-##日期##
+## 日期
 返回值为整数的API，数值为1970-1-1 00:00:00 UTC（世界标准时间）到某个时刻所经过的毫秒数：
  - Date.now()：返回现在时刻。
  - Date.parse("2022-04-15T15:30:00.000+08:00")：返回北京时间2022年4月15日
@@ -617,7 +599,7 @@ JSON对象用于序列化对象、数组、数值、字符串、布尔值和null
  - getMinutes()：返回分钟
  - getSeconds()：返回秒
  - getMilliseconds()：返回毫秒
-##WebSocket##
+## WebSocket
 与服务器建立全双工连接。
 
 常用API：
@@ -627,12 +609,12 @@ JSON对象用于序列化对象、数组、数值、字符串、布尔值和null
  - onopen：类似于onclick，当连接建立时触发。
  - onmessage：当从服务器端接收到消息时触发。
  - close()：关闭连接。
-##window##
+## window
  - window.open("https://www.acwing.com")在新标签栏中打开页面。
  - location.reload()刷新页面。
  - location.href = "https://www.acwing.com"：在当前标签栏中打开页面。
  - onclose：当连接关闭后触发。
-##canvas##
+## canvas
 [canvas教程][1]
 
 

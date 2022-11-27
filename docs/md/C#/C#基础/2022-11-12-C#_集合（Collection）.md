@@ -1,25 +1,7 @@
----
-layout: post
-cid: 288
-title: C# 集合（Collection）
-slug: 288
-date: 2022/11/12 23:45:30
-updated: 2022/11/12 23:45:30
-status: publish
-author: 翕
-categories: 
-  - C#基础
-tags: 
-abcimg: able
-bimg: https://cdn.acwing.com/media/article/image/2022/11/09/192601_0f8a9fdd5f-C-300x184.png
-img: https://cdn.acwing.com/media/article/image/2022/11/09/192601_0f8a9fdd5f-C-300x184.png
----
-
-
 集合（Collection）类是专门用于数据存储和检索的类。这些类提供了对栈（stack）、队列（queue）、列表（list）和哈希表（hash table）的支持。大多数集合类实现了相同的接口。
 
 集合（Collection）类服务于不同的目的，如为元素动态分配内存，基于索引访问列表项等等。这些类创建 Object 类的对象的集合。在 C# 中，Object 类是所有数据类型的基类。
-##C# 动态数组（ArrayList）
+## C# 动态数组（ArrayList）
 动态数组（ArrayList）代表了可被单独索引的对象的有序集合。它基本上可以替代一个数组。但是，与数组不同的是，您可以使用索引在指定的位置添加和移除项目，动态数组会自动重新调整它的大小。它也允许在列表中进行动态内存分配、增加、搜索、排序各项。
 ![cs25.png](https://cdn.acwing.com/media/article/image/2022/11/12/192601_9c59425462-cs25.png) 
 下面的实例演示了动态数组（ArrayList）的概念：
@@ -75,7 +57,7 @@ Count: 7
 Content: 45 78 33 56 12 23 9 
 Sorted Content: 9 12 23 33 45 56 78 
 ```
-##C# 哈希表（Hashtable）
+## C# 哈希表（Hashtable）
 Hashtable 类代表了一系列基于键的哈希代码组织起来的键/值对。它使用键来访问集合中的元素。
 
 当您使用键访问元素时，则使用哈希表，而且您可以识别一个有用的键值。哈希表中的每一项都有一个键/值对。键用于访问集合中的项目。
@@ -135,7 +117,7 @@ namespace CollectionsApplication
 006: M. Arif
 
 ```
-##C# 排序列表（SortedList）
+## C# 排序列表（SortedList）
 SortedList 类代表了一系列按照键来排序的键/值对，这些键值对可以通过键和索引来访问。
 
 排序列表是数组和哈希表的组合。它包含一个可使用键或索引访问各项的列表。如果您使用索引访问各项，则它是一个动态数组（ArrayList），如果您使用键访问各项，则它是一个哈希表（Hashtable）。集合中的各项总是按键值排序。
@@ -193,7 +175,7 @@ namespace CollectionsApplication
 007: Ritesh Saikia
 008: Nuha Ali
 ```
-##C# 堆栈（Stack）
+## C# 堆栈（Stack）
 堆栈（Stack）代表了一个后进先出的对象集合。当您需要对各项进行后进先出的访问时，则使用堆栈。当您在列表中添加一项，称为推入元素，当您从列表中移除一项时，称为弹出元素。
 ![cs28.png](https://cdn.acwing.com/media/article/image/2022/11/12/192601_aacc5c7562-cs28.png) 
 下面的实例演示了堆栈（Stack）的使用：
@@ -258,7 +240,7 @@ Removing values
 Current stack: 
 G M A
 ```
-##C# 队列（Queue）
+## C# 队列（Queue）
 队列（Queue）代表了一个先进先出的对象集合。当您需要对各项进行先进先出的访问时，则使用队列。当您在列表中添加一项，称为入队，当您从列表中移除一项时，称为出队。
 ![cs29.png](https://cdn.acwing.com/media/article/image/2022/11/12/192601_ec0965e862-cs29.png) 
 下面的实例演示了队列（Queue）的使用：

@@ -1,30 +1,3 @@
----
-layout: post
-cid: 431
-title: 从零开始用Jenkins自动构建部署SpringBoot项目
-slug: 431
-date: 2022/11/26 12:33:04
-updated: 2022/11/26 12:33:04
-status: publish
-author: 翕
-categories: 
-  - Jenkins
-tags: 
-customSummary: 
-mathjax: auto
-noThumbInfoEmoji: 
-noThumbInfoStyle: default
-outdatedNotice: no
-parseWay: auto
-reprint: standard
-thumb: 
-thumbChoice: default
-thumbDesc: 
-thumbSmall: 
-thumbStyle: default
----
-
-
 # 从零开始用Jenkins自动构建部署SpringBoot项目
 
 ## 前提条件

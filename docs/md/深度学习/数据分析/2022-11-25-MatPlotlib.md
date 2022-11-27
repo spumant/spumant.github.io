@@ -1,31 +1,4 @@
----
-layout: post
-cid: 362
-title: MatPlotlib
-slug: 362
-date: 2022/11/25 17:08:00
-updated: 2022/11/25 17:20:06
-status: publish
-author: 翕
-categories: 
-  - 数据分析
-tags: 
-customSummary: 
-mathjax: auto
-noThumbInfoEmoji: 
-noThumbInfoStyle: default
-outdatedNotice: no
-parseWay: auto
-reprint: standard
-thumb: 
-thumbChoice: default
-thumbDesc: 
-thumbSmall: 
-thumbStyle: default
----
-
-
-## [#](#介绍) 介绍
+## 介绍
 
 Matplotlib 是专门用于开发 2D 图表（包括 3D 图表）的 python 库
 
@@ -33,7 +6,7 @@ Matplotlib 是专门用于开发 2D 图表（包括 3D 图表）的 python 库
 
 官网：[Matplotlib (opens new window)](https://matplotlib.org/index.html)
 
-## [#](#三层结构) 三层结构
+## 三层结构
 
 容器层
 
@@ -45,7 +18,7 @@ Matplotlib 是专门用于开发 2D 图表（包括 3D 图表）的 python 库
 
 图像层
 
-## [#](#折线图-plot) 折线图 plot
+## 折线图 plot
 
 以折线的上升或下降来表示统计数量的增减变化的统计图
 
@@ -95,7 +68,7 @@ plt.title("上海、北京11点0分到12点之间的温度变化图示")
 plt.show()
 ``` 
 
-### [#](#多坐标系) 多坐标系
+### 多坐标系
 
 ```python
 figure, axes = plt.subplots(nrows=1, ncols=1, **fig_kw)
@@ -153,7 +126,7 @@ plt.show()
 ```
 
 
-### [#](#数学函数) 数学函数
+### 数学函数
 
 ```python
 import matplotlib.pyplot as plt
@@ -175,7 +148,7 @@ plt.grid(linestyle="--",alpha=0.5)
 plt.show()
 ```
 
-## [#](#散点图-scatter) 散点图 scatter
+## 散点图 scatter
 
 用两组数据构成多个坐标点，考察坐标点的分布，判断两变量之间是否存在某种关联或总结坐标点的分布模式。
 
@@ -201,7 +174,7 @@ plt.show()
 ```
 
 
-## [#](#柱状图-bar) 柱状图 bar
+## 柱状图 bar
 
 排列在工作表的列或行中的数据可以绘制到柱状图中。
 
@@ -233,7 +206,7 @@ plt.show()
 ```
 
 
-## [#](#直方图-histogram) 直方图 histogram
+## 直方图 histogram
 
 由一系列高度不等的纵向条纹或线段表示数据分布的情况。一般用横轴表示数据范围，纵轴表示分布情况。
 
@@ -241,7 +214,7 @@ plt.show()
 
 直方图牵涉统计学的概念，首先要对数据进行分组，然后统计每个分组内数据元的数量。在坐标系中，横轴标出每个组的端点，纵轴表示频数，每个矩形的高代表对应的频数，称这样的统计图为频数分布直方图。
 
-### [#](#直方图与柱状图的区别) 直方图与柱状图的区别
+### 直方图与柱状图的区别
 
 1.  直方图展示数据的分布，柱状图比较数据的大小（最根本的区别）
 2.  直方图 X 轴为定量数据，柱状图 X 轴为分类数据
@@ -272,7 +245,7 @@ plt.grid(linestyle="--", alpha=0.5)
 plt.show()
 ```
 
-## [#](#饼图-pie) 饼图 pie
+## 饼图 pie
 
 用于表示不同分类的占比情况，通过弧度大小来对比各种分类。
 

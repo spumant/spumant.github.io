@@ -1,23 +1,3 @@
----
-layout: post
-cid: 29
-title: SrpingMVC
-slug: 29
-date: 2022/10/30 08:35:00
-updated: 2022/10/30 19:30:50
-status: publish
-author: 翕
-categories: 
-  - Java框架
-tags: 
-abcimg: able
-bimg: https://cdn.acwing.com/media/article/image/2022/10/30/192601_c848d20a58-spring.jfif
-img: https://cdn.acwing.com/media/article/image/2022/10/30/192601_c848d20a58-spring.jfif
----
-
-
-[TOC]
-
 # 一、SpringMVC简介
 
 ### 1、什么是MVC

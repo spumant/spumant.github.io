@@ -1,30 +1,3 @@
----
-layout: post
-cid: 428
-title: cookie和session
-slug: 428
-date: 2022/11/26 12:27:22
-updated: 2022/11/26 12:27:22
-status: publish
-author: 翕
-categories: 
-  - JavaWeb
-tags: 
-customSummary: 
-mathjax: auto
-noThumbInfoEmoji: 
-noThumbInfoStyle: default
-outdatedNotice: no
-parseWay: auto
-reprint: standard
-thumb: 
-thumbChoice: default
-thumbDesc: 
-thumbSmall: 
-thumbStyle: default
----
-
-
 ## 7、Cookie、Session
 
 ### 7.1、会话

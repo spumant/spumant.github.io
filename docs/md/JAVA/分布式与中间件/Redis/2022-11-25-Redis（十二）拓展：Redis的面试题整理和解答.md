@@ -1,30 +1,3 @@
----
-layout: post
-cid: 382
-title: Redis（十二）拓展：Redis的面试题整理和解答
-slug: 382
-date: 2022/11/25 20:56:07
-updated: 2022/11/25 20:56:07
-status: publish
-author: 翕
-categories: 
-  - Redis
-tags: 
-customSummary: 
-mathjax: auto
-noThumbInfoEmoji: 
-noThumbInfoStyle: default
-outdatedNotice: no
-parseWay: auto
-reprint: standard
-thumb: 
-thumbChoice: default
-thumbDesc: 
-thumbSmall: 
-thumbStyle: default
----
-
-
 ## Redis（十二）拓展：Redis的面试题整理和解答
 
 ## 前言

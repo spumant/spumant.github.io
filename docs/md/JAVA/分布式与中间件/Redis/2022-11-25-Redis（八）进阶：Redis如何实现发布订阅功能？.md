@@ -1,30 +1,3 @@
----
-layout: post
-cid: 378
-title: Redis（八）进阶：Redis如何实现发布订阅功能？
-slug: 378
-date: 2022/11/25 20:53:36
-updated: 2022/11/25 20:53:36
-status: publish
-author: 翕
-categories: 
-  - Redis
-tags: 
-customSummary: 
-mathjax: auto
-noThumbInfoEmoji: 
-noThumbInfoStyle: default
-outdatedNotice: no
-parseWay: auto
-reprint: standard
-thumb: 
-thumbChoice: default
-thumbDesc: 
-thumbSmall: 
-thumbStyle: default
----
-
-
 ## Redis（八）进阶：Redis如何实现发布订阅功能？
 
 ## 前言

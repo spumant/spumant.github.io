@@ -1,30 +1,3 @@
----
-layout: post
-cid: 380
-title: Redis（十）进阶：Redis集群之哨兵模式的学习和理解
-slug: 380
-date: 2022/11/25 20:54:33
-updated: 2022/11/25 20:54:33
-status: publish
-author: 翕
-categories: 
-  - Redis
-tags: 
-customSummary: 
-mathjax: auto
-noThumbInfoEmoji: 
-noThumbInfoStyle: default
-outdatedNotice: no
-parseWay: auto
-reprint: standard
-thumb: 
-thumbChoice: default
-thumbDesc: 
-thumbSmall: 
-thumbStyle: default
----
-
-
 ## Redis（十）进阶：Redis集群之哨兵模式的学习和理解
 
 ## 前言

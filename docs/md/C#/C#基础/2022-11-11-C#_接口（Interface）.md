@@ -1,21 +1,3 @@
----
-layout: post
-cid: 271
-title: C# 接口（Interface）
-slug: 271
-date: 2022/11/11 15:47:00
-updated: 2022/11/11 15:48:05
-status: publish
-author: 翕
-categories: 
-  - C#基础
-tags: 
-abcimg: able
-bimg: https://cdn.acwing.com/media/article/image/2022/11/09/192601_0f8a9fdd5f-C-300x184.png
-img: https://cdn.acwing.com/media/article/image/2022/11/09/192601_0f8a9fdd5f-C-300x184.png
----
-
-
 接口定义了所有类继承接口时应遵循的语法合同。接口定义了语法合同 "是什么" 部分，派生类定义了语法合同 "怎么做" 部分。
 
 接口定义了属性、方法和事件，这些都是接口的成员。接口只包含了成员的声明。成员的定义是派生类的责任。接口提供了派生类应遵循的标准结构。
@@ -28,7 +10,7 @@ img: https://cdn.acwing.com/media/article/image/2022/11/09/192601_0f8a9fdd5f-C-3
 
 抽象类不能直接实例化，但允许派生出具体的，具有实际功能的类。
 
-##定义接口: MyInterface.cs
+## 定义接口: MyInterface.cs
 接口使用 interface 关键字声明，它与类的声明类似。接口声明默认是 public 的。下面是一个接口声明的实例：
 ```
 interface IMyInterface
@@ -70,7 +52,7 @@ class InterfaceImplementer : IMyInterface
 ```
 继承接口后，我们需要实现接口的方法 MethodToImplement() , 方法名必须与接口定义的方法名一致。
 
-##接口继承: InterfaceInheritance.cs
+## 接口继承: InterfaceInheritance.cs
 以下实例定义了两个接口 IMyInterface 和 IParentInterface。
 
 如果一个接口继承其他接口，那么实现类或结构就需要实现所有接口的成员。

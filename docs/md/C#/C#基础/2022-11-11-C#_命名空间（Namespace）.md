@@ -1,21 +1,3 @@
----
-layout: post
-cid: 272
-title: C# 命名空间（Namespace）
-slug: 272
-date: 2022/11/11 15:50:00
-updated: 2022/11/11 15:50:46
-status: publish
-author: 翕
-categories: 
-  - C#基础
-tags: 
-abcimg: able
-bimg: https://cdn.acwing.com/media/article/image/2022/11/09/192601_0f8a9fdd5f-C-300x184.png
-img: https://cdn.acwing.com/media/article/image/2022/11/09/192601_0f8a9fdd5f-C-300x184.png
----
-
-
 命名空间的设计目的是提供一种让一组名称与其他名称分隔开的方式。在一个命名空间中声明的类的名称与另一个命名空间中声明的相同的类的名称不冲突。
 
 我们举一个计算机系统中的例子，一个文件夹(目录)中可以包含多个文件夹，每个文件夹中不能有相同的文件名，但不同文件夹中的文件可以重名。
@@ -72,7 +54,7 @@ class TestClass
 Inside first_space
 Inside second_space
 ```
-##using 关键字
+## using 关键字
 using 关键字表明程序使用的是给定命名空间中的名称。例如，我们在程序中使用 System 命名空间，其中定义了类 Console。我们可以只写：
 ```
 Console.WriteLine ("Hello there");
@@ -126,7 +108,7 @@ class TestClass
 Inside first_space
 Inside second_space
 ```
-##嵌套命名空间
+## 嵌套命名空间
 命名空间可以被嵌套，即您可以在一个命名空间内定义另一个命名空间，如下所示：
 ```
 namespace namespace_name1 

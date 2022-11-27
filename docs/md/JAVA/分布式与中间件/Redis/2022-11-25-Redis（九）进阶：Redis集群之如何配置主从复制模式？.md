@@ -1,30 +1,3 @@
----
-layout: post
-cid: 379
-title: Redis（九）进阶：Redis集群之如何配置主从复制模式？
-slug: 379
-date: 2022/11/25 20:53:23
-updated: 2022/11/25 20:53:23
-status: publish
-author: 翕
-categories: 
-  - Redis
-tags: 
-customSummary: 
-mathjax: auto
-noThumbInfoEmoji: 
-noThumbInfoStyle: default
-outdatedNotice: no
-parseWay: auto
-reprint: standard
-thumb: 
-thumbChoice: default
-thumbDesc: 
-thumbSmall: 
-thumbStyle: default
----
-
-
 ## 前言
 
 默认情况下，每台Redis服务器都是主节点；  

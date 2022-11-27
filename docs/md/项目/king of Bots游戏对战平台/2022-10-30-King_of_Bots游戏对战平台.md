@@ -1,33 +1,3 @@
----
-layout: post
-cid: 47
-title: King of Bots游戏对战平台
-slug: 47
-date: 2022/10/30 08:45:00
-updated: 2022/11/21 18:03:13
-status: publish
-author: 翕
-categories: 
-  - 项目
-tags: 
-abcimg: able
-bimg: https://cdn.acwing.com/media/article/image/2022/07/07/1_59b8f162fd-background.png
-customSummary: 
-img: https://cdn.acwing.com/media/article/image/2022/07/07/1_59b8f162fd-background.png
-mathjax: auto
-noThumbInfoEmoji: 
-noThumbInfoStyle: default
-outdatedNotice: no
-parseWay: auto
-reprint: standard
-thumb: https://cdn.acwing.com/media/article/image/2022/07/07/1_59b8f162fd-background.png
-thumbChoice: default
-thumbDesc: 
-thumbSmall: 
-thumbStyle: default
----
-
-
 # King Of Bots游戏对战平台
 
 King Of Bots（简称KOB）游戏对战平台是基于springboot+vue构成的AI对战平台，支持人人对战，人机对战与机机对战，是仿照北京大学的游戏对战平台[BotZone](https://www.botzone.org.cn/games)制作的一个贪吃蛇游戏对战平台,项目目前已完成。如果需要，可以在日后上线。

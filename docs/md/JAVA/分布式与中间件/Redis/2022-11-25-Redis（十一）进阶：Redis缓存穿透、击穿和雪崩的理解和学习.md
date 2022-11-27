@@ -1,30 +1,3 @@
----
-layout: post
-cid: 381
-title: Redis（十一）进阶：Redis缓存穿透、击穿和雪崩的理解和学习
-slug: 381
-date: 2022/11/25 20:55:28
-updated: 2022/11/25 20:55:28
-status: publish
-author: 翕
-categories: 
-  - Redis
-tags: 
-customSummary: 
-mathjax: auto
-noThumbInfoEmoji: 
-noThumbInfoStyle: default
-outdatedNotice: no
-parseWay: auto
-reprint: standard
-thumb: 
-thumbChoice: default
-thumbDesc: 
-thumbSmall: 
-thumbStyle: default
----
-
-
 ## Redis（十一）进阶：Redis缓存穿透、击穿和雪崩的理解和学习
 
 ## 前言

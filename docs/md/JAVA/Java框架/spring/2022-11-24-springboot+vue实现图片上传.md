@@ -1,32 +1,5 @@
----
-layout: post
-cid: 348
-title: springboot+vue实现图片上传
-slug: 348
-date: 2022/11/24 20:05:03
-updated: 2022/11/24 20:05:03
-status: publish
-author: 翕
-categories: 
-  - Java框架
-tags: 
-customSummary: 
-mathjax: auto
-noThumbInfoEmoji: 
-noThumbInfoStyle: default
-outdatedNotice: no
-parseWay: auto
-reprint: standard
-thumb: 
-thumbChoice: default
-thumbDesc: 
-thumbSmall: 
-thumbStyle: default
----
-
-
-#方式一
-##点击Vue图标，选择电脑中图片，选中后把图片替换为选中图片：
+# 方式一
+## 点击Vue图标，选择电脑中图片，选中后把图片替换为选中图片：
 ```
 <template>
   <div>
@@ -86,7 +59,7 @@ export default {
 };
 
 ```
-##点击上传，通过文件流的方式把图片上传至服务器，服务器将图片保存至指定位置，并根据时间生成指定名称，上传成功，返回新生成文件名。：
+## 点击上传，通过文件流的方式把图片上传至服务器，服务器将图片保存至指定位置，并根据时间生成指定名称，上传成功，返回新生成文件名。：
 ```
 /**
      * 上传图片接口
@@ -174,7 +147,7 @@ public class UpPhotoNameUtils {
 }
 
 ```
-##服务器自定义接口，通过需要的文件名，返回指定文件流：
+## 服务器自定义接口，通过需要的文件名，返回指定文件流：
 ```
   //使用流将图片输出
     @GetMapping("/getImage/{name}")
@@ -220,8 +193,8 @@ submitForm(event) {
     }
 
 ```
-#方式二简化版
-##前端代码
+# 方式二简化版
+## 前端代码
 ```
  <form method="post" action="/upload" enctype="multipart/form-data">
                     <input type="file" name="file"><br>
@@ -244,7 +217,7 @@ submitForm(event) {
         </el-dialog>
 
 ```
-##后端代码（控制层）：以SpringBoot为例接收
+## 后端代码（控制层）：以SpringBoot为例接收
 ```
 在这里插入代码片@PostMapping("/upload")  //上传头像
     public String upload(@RequestParam("file") MultipartFile file,HttpServletRequest request) {

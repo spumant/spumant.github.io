@@ -1,30 +1,3 @@
----
-layout: post
-cid: 376
-title: Redis（七）进阶：Redis持久化之RDB和AOF
-slug: 376
-date: 2022/11/25 20:51:52
-updated: 2022/11/25 20:51:52
-status: publish
-author: 翕
-categories: 
-  - Redis
-tags: 
-customSummary: 
-mathjax: auto
-noThumbInfoEmoji: 
-noThumbInfoStyle: default
-outdatedNotice: no
-parseWay: auto
-reprint: standard
-thumb: 
-thumbChoice: default
-thumbDesc: 
-thumbSmall: 
-thumbStyle: default
----
-
-
 ## 前言
 
 Redis 是**内存数据库**，如果不将内存中的数据库状态保存到磁盘，那么一旦服务器进程退出，服务器中的数据库状态也会消失。所以 Redis 提供了**持久化功能** !

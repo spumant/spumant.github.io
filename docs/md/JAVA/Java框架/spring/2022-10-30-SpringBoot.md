@@ -1,21 +1,3 @@
----
-layout: post
-cid: 32
-title: SpringBoot
-slug: 32
-date: 2022/10/30 08:36:00
-updated: 2022/10/30 20:23:24
-status: publish
-author: 翕
-categories: 
-  - Java框架
-tags: 
-abcimg: able
-bimg: https://cdn.acwing.com/media/article/image/2022/10/30/192601_c848d20a58-spring.jfif
-img: https://cdn.acwing.com/media/article/image/2022/10/30/192601_c848d20a58-spring.jfif
----
-
-
 # SpringBoot
 
 ### 文档更新日志

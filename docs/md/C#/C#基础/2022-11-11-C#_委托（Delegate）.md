@@ -1,26 +1,8 @@
----
-layout: post
-cid: 275
-title: C# 委托（Delegate）
-slug: 275
-date: 2022/11/11 16:01:55
-updated: 2022/11/11 16:01:55
-status: publish
-author: 翕
-categories: 
-  - C#基础
-tags: 
-abcimg: able
-bimg: https://cdn.acwing.com/media/article/image/2022/11/09/192601_0f8a9fdd5f-C-300x184.png
-img: https://cdn.acwing.com/media/article/image/2022/11/09/192601_0f8a9fdd5f-C-300x184.png
----
-
-
 C# 中的委托（Delegate）类似于 C 或 C++ 中函数的指针。委托（Delegate） 是存有对某个方法的引用的一种引用类型变量。引用可在运行时被改变。
 
 委托（Delegate）特别用于实现事件和回调方法。所有的委托（Delegate）都派生自 System.Delegate 类。
 
-##声明委托（Delegate）
+## 声明委托（Delegate）
 委托声明决定了可由该委托引用的方法。委托可指向一个与其具有相同标签的方法。
 
 例如，假设有一个委托：
@@ -33,7 +15,7 @@ public delegate int MyDelegate (string s);
 ```
 delegate <return type> <delegate-name> <parameter list>
 ```
-##实例化委托（Delegate）
+## 实例化委托（Delegate）
 一旦声明了委托类型，委托对象必须使用 new 关键字来创建，且与一个特定的方法有关。当创建委托时，传递到 new 语句的参数就像方法调用一样书写，但是不带有参数。例如：
 ```
 public delegate void printString(string s);
@@ -87,7 +69,7 @@ namespace DelegateAppl
 Value of Num: 35
 Value of Num: 175
 ```
-##委托的多播（Multicasting of a Delegate）
+## 委托的多播（Multicasting of a Delegate）
 委托对象可使用 "+" 运算符进行合并。一个合并委托调用它所合并的两个委托。只有相同类型的委托可被合并。"-" 运算符可用于从合并的委托中移除组件委托。
 
 使用委托的这个有用的特点，您可以创建一个委托被调用时要调用的方法的调用列表。这被称为委托的 多播（multicasting），也叫组播。下面的程序演示了委托的多播：
@@ -136,7 +118,7 @@ namespace DelegateAppl
 ```
 Value of Num: 75
 ```
-##委托（Delegate）的用途
+## 委托（Delegate）的用途
 下面的实例演示了委托的用法。委托 printString 可用于引用带有一个字符串作为输入的方法，并不返回任何东西。
 
 我们使用这个委托来调用两个方法，第一个把字符串打印到控制台，第二个把字符串打印到文件：

@@ -1,22 +1,4 @@
----
-layout: post
-cid: 33
-title: SpringBoot项目搭建及基础配置
-slug: 33
-date: 2022/10/30 08:37:00
-updated: 2022/10/30 21:58:15
-status: publish
-author: 翕
-categories: 
-  - 项目
-tags: 
-abcimg: able
-bimg: http://124.221.199.172/usr/uploads/2022/10/279059054.jpg
-img: http://124.221.199.172/usr/uploads/2022/10/279059054.jpg
----
-
-
-#配置springboot#
+# 配置springboot
 ```
 <dependencies>
         <dependency>
@@ -127,7 +109,7 @@ img: http://124.221.199.172/usr/uploads/2022/10/279059054.jpg
 </build>
 
 ```
-###在application.properties中添加数据库配置：###
+### 在application.properties中添加数据库配置：
 ```
 spring.datasource.username=root
 spring.datasource.password=monarch99
@@ -135,8 +117,8 @@ spring.datasource.url=jdbc:mysql://localhost:3306/kob?serverTimezone=Asia/Shangh
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
 ```
-#修改Spring Security#
-###实现service.impl.UserDetailsServiceImpl类，继承自UserDetailsService接口，用来接入数据库信息###
+# 修改Spring Security
+### 实现service.impl.UserDetailsServiceImpl类，继承自UserDetailsService接口，用来接入数据库信息
 ```@Service
 public class UserDetailsServiceImpl implements UserDetailsService {
 
@@ -157,7 +139,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 }
 
 ```
-###实现config.SecurityConfig类，用来实现用户密码的加密存储###
+### 实现config.SecurityConfig类，用来实现用户密码的加密存储
 ```
 @Configuration
 @EnableWebSecurity
@@ -170,7 +152,7 @@ public class SecurityConfig {
 }
 
 ```
-###实现utils.JwtUtil类，为jwt工具类，用来创建、解析jwt token###
+### 实现utils.JwtUtil类，为jwt工具类，用来创建、解析jwt token
 ```
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtBuilder;
@@ -234,7 +216,7 @@ public class JwtUtil {
 }
 
 ```
-###实现config.filter.JwtAuthenticationTokenFilter类，用来验证jwt token，如果验证成功，则将User信息注入上下文中###
+### 实现config.filter.JwtAuthenticationTokenFilter类，用来验证jwt token，如果验证成功，则将User信息注入上下文中
 ```
 import com.kob.backend.mapper.UserMapper;
 import com.kob.backend.pojo.User;
@@ -296,7 +278,7 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
 }
 
 ```
-###配置config.SecurityConfig类，放行登录、注册等接口###
+### 配置config.SecurityConfig类，放行登录、注册等接口
 ```
 import com.kob.backend.config.filter.JwtAuthenticationTokenFilter;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -343,7 +325,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 }
 ```
-###Claims###
+### Claims
 ```
 import com.kob.backend.utils.JwtUtil;
 import io.jsonwebtoken.Claims;
@@ -364,11 +346,11 @@ public class JwtAuthentication {
 
 ```
 ![Claims][1]
-#编写API
+# 编写API
 ![springboot层][2]
 ![springbootAPI][3]
-#集成WebSocket#
-###依赖###
+# 集成WebSocket
+### 依赖
 ```
 <dependency>
     <groupId>org.springframework.boot</groupId>
@@ -382,7 +364,7 @@ public class JwtAuthentication {
 </dependency>
 
 ```
-###添加config.WebSocketConfig配置类###
+### 添加config.WebSocketConfig配置类
 ```
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -399,7 +381,7 @@ public class WebSocketConfig {
 }
 
 ```
-###添加consumer.WebSocketServer类###
+### 添加consumer.WebSocketServer类
 ```
 import org.springframework.stereotype.Component;
 
@@ -433,7 +415,7 @@ public class WebSocketServer {
 
 
 ```
-###配置config.SecurityConfig###
+### 配置config.SecurityConfig
 ```
 @Override
 public void configure(WebSecurity web) throws Exception {
@@ -441,7 +423,7 @@ public void configure(WebSecurity web) throws Exception {
 }
 
 ```
-##WebSocket讲解##
+## WebSocket讲解
 ![websocket][4]
 ![web2][5]
 ```
@@ -627,8 +609,8 @@ public class DemoController {
 }
 
 ```
-#实现匹配系统的微服务#
-###依赖###
+# 实现匹配系统的微服务
+### 依赖
 ```
 <dependency>
     <groupId>org.springframework.cloud</groupId>
@@ -649,8 +631,8 @@ public class DemoController {
 </dependency>
 
 ```
-#MybatisConfig#
-###分页配置###
+# MybatisConfig
+### 分页配置
 ```
 @Configuration
 public class MybatisConfig {
@@ -663,7 +645,7 @@ public class MybatisConfig {
 }
 
 ```
-###分页写法###
+### 分页写法
 ```
 public JSONObject getList(Integer page) {
         IPage<User> userIPage = new Page<>(page, 10);
@@ -679,8 +661,8 @@ public JSONObject getList(Integer page) {
     }
  
 ```
-#Redis#
-###Ridis基本配置###
+# Redis
+### Ridis基本配置
 ```
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
@@ -779,7 +761,7 @@ public class RedisConfig {
 }
 
 ```
-###响应类###
+### 响应类
 ```
 import com.fasterxml.jackson.annotation.JsonInclude;
 
@@ -843,7 +825,7 @@ public class ResponseResult<T> {
 }
 
 ```
-###工具类###
+### 工具类
 ```
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtBuilder;
@@ -1223,9 +1205,9 @@ public class WebUtils
 }
 
 ```
-#JsonObject#
+# JsonObject
 ![JsonObject.png][7]
-###依赖###
+### 依赖
 ```
 <dependency>
             <groupId>com.alibaba</groupId>
@@ -1233,7 +1215,7 @@ public class WebUtils
             <version>1.2.28</version>
 </dependency>
 ```
-###通过原生生成json数据格式###
+### 通过原生生成json数据格式
 ```
 JSONObject zhangsan = new JSONObject();
         try {
@@ -1250,7 +1232,7 @@ JSONObject zhangsan = new JSONObject();
         }
 
 ```
-###通过hashMap数据结构生成###
+### 通过hashMap数据结构生成
 ```
  HashMap<String, Object> zhangsan = new HashMap<>();
         
@@ -1263,7 +1245,7 @@ JSONObject zhangsan = new JSONObject();
         System.out.println(new JSONObject(zhangsan).toString());
 
 ```
-###通过实体生成###
+### 通过实体生成
 ```
 Student student = new Student();
         student.setId(1);
@@ -1275,7 +1257,7 @@ Student student = new Student();
         String stuString = JSONObject.toJSONString(student);
 
 ```
-###JSON字符串转换成JSON对象###
+### JSON字符串转换成JSON对象
 ```
 String studentString = "{\"id\":1,\"age\":2,\"name\":\"zhang\"}";
  
@@ -1285,7 +1267,7 @@ JSONObject jsonObject1 = JSONObject.parseObject(stuString);
 System.out.println(jsonObject1);
 
 ```
-###list对象转listJson###
+### list对象转listJson
 ```
 ArrayList<Student> studentLsit = new ArrayList<>();
         Student student1 = new Student();
@@ -1312,7 +1294,7 @@ ArrayList<Student> studentLsit = new ArrayList<>();
         System.out.println(jsonArray);
 
 ```
-#前后端交互所用基本类#
+# 前后端交互所用基本类
 ```
 import lombok.Data;
 import java.util.HashMap;
@@ -1351,7 +1333,7 @@ public class R<T> {
 }
 
 ```
-#公共字段填充#
+# 公共字段填充
 ```
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import org.apache.ibatis.reflection.MetaObject;
@@ -1377,7 +1359,7 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
 }
 
 ```
-#全局异常处理#
+# 全局异常处理
 ```
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -1403,7 +1385,7 @@ public class GlobalExceptionHandler {
 }
 
 ```
-#自定义异常类#
+# 自定义异常类
 ```
 public class CustomException extends RuntimeException{
     public CustomException(String message){
@@ -1412,7 +1394,7 @@ public class CustomException extends RuntimeException{
 }
 
 ```
-#文件上传下载#
+# 文件上传下载
 ```
 import com.itheima.reggie.common.R;
 import org.springframework.beans.factory.annotation.Value;
@@ -1475,12 +1457,12 @@ public class CommonController {
 }
 
 ```
-#项目经历#
-###一、关于路径相关的注解###
+# 项目经历
+### 一、关于路径相关的注解
 关于路径变量，如果是在路径中，需要在controller层的方法变量处加上@PathVariable，如果是以json格式包含在请求体中，则需要加上@RequestParam
-###二、关于自动注入###
+### 二、关于自动注入
 自动注入时，如果是ServiceImpl，则需要自动注入mapper层，如果是在controller中，则需要注入Service，如果是非spring组件，则需要在属性的set方法上加上自动注入。
-###三、通过token获得当前用户的方法###
+### 三、通过token获得当前用户的方法
 ```
 UsernamePasswordAuthenticationToken authentication =
                 (UsernamePasswordAuthenticationToken) SecurityContextHolder.getContext().getAuthentication();
@@ -1489,7 +1471,7 @@ UsernamePasswordAuthenticationToken authentication =
         User user = loginUser.getUser();
 
 ```
-###四、jwt验证登录###
+### 四、jwt验证登录
 ```
 UsernamePasswordAuthenticationToken authenticationToken =
                 new UsernamePasswordAuthenticationToken(username, password);
@@ -1500,13 +1482,13 @@ UsernamePasswordAuthenticationToken authenticationToken =
         String jwt = JwtUtil.createJWT(user.getId().toString());
 
 ```
-###五、关于多线程加锁###
+### 五、关于多线程加锁
 ```
 只有读读操作的话不需要加锁，如果对于一个对象有多个线程需要读写结合或者写写操作，需要加锁，加锁要记得解锁，认真思考避免死锁的情况
 加锁所需的类：private ReentrantLock lock = new ReentrantLock();
 
 ```
-###六、向前端发送信息###
+### 六、向前端发送信息
 ```
 public void sendMessage(String message) {
         synchronized (this.session) {
@@ -1518,9 +1500,9 @@ public void sendMessage(String message) {
         }
 }
 ```
-###七、线程安全的map###
+### 七、线程安全的map
 ConcurrentHashMap，在多线程中使用
-###八、后端通信###
+### 八、后端通信
 ```
 使用RestTemplate
 

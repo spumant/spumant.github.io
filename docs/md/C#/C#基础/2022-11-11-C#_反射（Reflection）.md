@@ -1,28 +1,10 @@
----
-layout: post
-cid: 274
-title: C# 反射（Reflection）
-slug: 274
-date: 2022/11/11 15:59:27
-updated: 2022/11/11 15:59:27
-status: publish
-author: 翕
-categories: 
-  - C#基础
-tags: 
-abcimg: able
-bimg: https://cdn.acwing.com/media/article/image/2022/11/09/192601_0f8a9fdd5f-C-300x184.png
-img: https://cdn.acwing.com/media/article/image/2022/11/09/192601_0f8a9fdd5f-C-300x184.png
----
-
-
 反射指程序可以访问、检测和修改它本身状态或行为的一种能力。
 
 程序集包含模块，而模块包含类型，类型又包含成员。反射则提供了封装程序集、模块和类型的对象。
 
 您可以使用反射动态地创建类型的实例，将类型绑定到现有对象，或从现有对象中获取类型。然后，可以调用类型的方法或访问其字段和属性。
 
-###优缺点
+### 优缺点
 优点：
 
  - 1、反射提高了程序的灵活性和扩展性。
@@ -32,7 +14,7 @@ img: https://cdn.acwing.com/media/article/image/2022/11/09/192601_0f8a9fdd5f-C-3
 缺点：
 1、性能问题：使用反射基本上是一种解释操作，用于字段和方法接入时要远慢于直接代码。因此反射机制主要应用在对灵活性和拓展性要求很高的系统框架上，普通程序不建议使用。
 2、使用反射会模糊程序内部逻辑；程序员希望在源代码中看到程序的逻辑，反射却绕过了源代码的技术，因而会带来维护的问题，反射代码比相应的直接代码更复杂。
-###反射（Reflection）的用途
+### 反射（Reflection）的用途
 反射（Reflection）有下列用途：
 
  - 它允许在运行时查看特性（attribute）信息。
@@ -40,7 +22,7 @@ img: https://cdn.acwing.com/media/article/image/2022/11/09/192601_0f8a9fdd5f-C-3
  - 它允许延迟绑定的方法和属性（property）。
  - 它允许在运行时创建新类型，然后使用这些类型执行一些任务。
 
-###查看元数据
+### 查看元数据
 我们已经在上面的章节中提到过，使用反射（Reflection）可以查看特性（attribute）信息。
 
 System.Reflection 类的 MemberInfo 对象需要被初始化，用于发现与类相关的特性（attribute）。为了做到这点，您可以定义目标类的一个对象，如下：

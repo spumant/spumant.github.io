@@ -1,30 +1,3 @@
----
-layout: post
-cid: 366
-title: Widows和Linux下如何安装Redis
-slug: 366
-date: 2022/11/25 20:13:03
-updated: 2022/11/25 20:13:03
-status: publish
-author: 翕
-categories: 
-  - Redis
-tags: 
-customSummary: 
-mathjax: auto
-noThumbInfoEmoji: 
-noThumbInfoStyle: default
-outdatedNotice: no
-parseWay: auto
-reprint: standard
-thumb: 
-thumbChoice: default
-thumbDesc: 
-thumbSmall: 
-thumbStyle: default
----
-
-
 +   **1\. 一.Widows下如何安装Redis?**  
     \*(1) .下载地址: [点击跳转](https://github.com/microsoftarchive/redis/releases/tag/win-3.2.100).  
     如下图:  

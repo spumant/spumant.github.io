@@ -1,30 +1,3 @@
----
-layout: post
-cid: 375
-title: Redis（六）进阶：Redis的配置文件详解
-slug: 375
-date: 2022/11/25 20:51:12
-updated: 2022/11/25 20:51:12
-status: publish
-author: 翕
-categories: 
-  - Redis
-tags: 
-customSummary: 
-mathjax: auto
-noThumbInfoEmoji: 
-noThumbInfoStyle: default
-outdatedNotice: no
-parseWay: auto
-reprint: standard
-thumb: 
-thumbChoice: default
-thumbDesc: 
-thumbSmall: 
-thumbStyle: default
----
-
-
 ## Redis（六）进阶：Redis的配置文件详解
 
 ## 前言
